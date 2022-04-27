@@ -6,9 +6,10 @@
 //press button to click to activate smurfs
 //displays conversion
 
-document.quersySelector('#check').addEventListener('click, convert')
+document.querySelector('#convert').addEventListener('click', convert)
 
-function concert() {
-    
-
+function convert () {
+    let temp = document.querySelector('#cels').value
+    temp = temp * 9/5 + 32
+    document.querySelector('#placeToConvert').innerText = temp
 }
